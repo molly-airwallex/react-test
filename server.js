@@ -5,7 +5,7 @@ var webpackConfig = require('./webpack.config.js');
 var app = express();
 
 var compiler = webpack(webpackConfig);
-
+//
 app.use(webpackDevMiddleware(compiler, {
   hot: true,
   filename: 'bundle.js',
